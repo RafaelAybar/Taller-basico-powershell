@@ -5,7 +5,7 @@ New-ADOrganizationalUnit Alumnado-Path "OU=Alumnado,DC=RAS2017,DC=org"
 #Creamos los grupos de usuarios
 
 New-ADGroup -Name "Profesorado" -SamAccountName Profesorado -GroupCategory Security -GroupScope Global -DisplayName "Profesorado" -Path " OU=Profesorado,DC=ras2017,DC=org " -Description "Grupo del profesorado"
-New-ADGroup -Name "Alumnado" -SamAccountName Alumnado -GroupCategory Security -GroupScope Global -DisplayName "Redaccion Solvetic" -Path " OU=Redaccion,DC=solvetic,DC=com " -Description "Alumnado"
+New-ADGroup -Name "Alumnado" -SamAccountName Alumnado -GroupCategory Security -GroupScope Global -DisplayName "Alumnado" -Path " OU=Redaccion,DC=solvetic,DC=com " -Description "Alumnado"
 
 #Creamos los usuarios y los asiganmos en el grupo correspondiente
 
