@@ -1,7 +1,7 @@
 #Creamos las GPO
 
-New-ADOrganizationalUnit Profesorado -Path "OU=Profesores,DC=RAS2017,DC=org"
-New-ADOrganizationalUnit Alumnado-Path "OU=Alumnos,DC=RAS2017,DC=org"
+New-ADOrganizationalUnit Profesorado -Path "OU=Profesorado,DC=RAS2017,DC=org"
+New-ADOrganizationalUnit Alumnado-Path "OU=Alumnado,DC=RAS2017,DC=org"
 #Creamos los grupos de usuarios
 
 New-ADGroup -Name "Profesorado" -SamAccountName Profesorado -GroupCategory Security -GroupScope Global -DisplayName "Profesorado" -Path " OU=Profesorado,DC=ras2017,DC=org " -Description "Grupo del profesorado"
